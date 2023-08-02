@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Frontend Mentor | Age calculator app</title>
+    <link rel="stylesheet" href="date.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<body>
+    <div class="box">
+        <div class="ipbox">
+            <div class="gp1">
+                <label class="label" for="date">date</label>
+                <input type="number" placeholder="DD" class="ip" name="date" id="date" max="31" min="1">
+                <p class="derror noerror">Must be a valid date</p>
+            </div>
+            <div class="gp2">
+                <label class="label" for="month">month</label>
+                <input type="number" placeholder="MM" class="ip" name="month" id="month" max="12" min="1">
+                <p class="merror noerror">Must be a valid month</p>
+            </div>
+            <div class="gp3">
+                <label class="label" for="year">year</label>
+                <input type="number" placeholder="YYYY" class="ip" name="year" id="year" max="2023" min="1">
+                <p class="yerror noerror">Must be a valid year</p>
+            </div>
+        </div>
+
+        <div class="line">
+              <p><hr></p>
+                <i class="fa fa-arrow-circle-down" style="font-size: 48px;" id="btn"></i>
+          <!--
+            <i class="fas" data-icon="<svg>...</svg>"></i>
+          -->
+        </div>
+        <br>
+        <div class="op">
+            <h1 class="age"> <span id="oy">--</span> years</h1>
+            <h1 class="age"> <span id="om">--</span> months</h1>
+            <h1 class="age"> <span id="od">--</span> days</h1>
+        </div>
+        </div>
+    <script src="date.js"></script>
+ 
+</body>
+</html>
